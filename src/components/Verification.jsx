@@ -26,21 +26,20 @@ const Verification = () => {
   const totalHeight = CheckList.length * itemHeight;
   return (
     <div className="h-[900px] p-3">
-      <div className="h-full w-full bg-[#143CFF] rounded-md flex flex-col">
+      <div className="h-full w-full bg-[#143CFF] rounded-md flex flex-col gap-6">
         <div className=" w-full h-3/12 flex justify-center items-center flex-col pt-10 gap-3">
           <h2 className="text-white font-semibold text-lg">Meet Headroom</h2>
-          <p className="text-2xl text-white font-bold text-center tracking-tight">
+          <p className=" text-xl px-1.5 md:text-2xl text-white font-bold text-center tracking-tight">
             Your AI assistant that does all your work for you, so you can go
             back to
             <br /> being busy
           </p>
         </div>
-        <div className=" w-full h-full flex overflow-hidden">
+        <div className=" w-full h-full flex flex-col md:flex-row overflow-hidden">
           <div className=" w-3/4 flex items-center justify-end  pr-4 pb-5 ">
-          <span className="border border-white rounded-full overflow-hidden border-2">
-
-            <PersonSvg />
-          </span>
+            <span className=" border-white rounded-full overflow-hidden border-2">
+              <PersonSvg />
+            </span>
           </div>
           <div className=" w-full h-full p-2 flex flex-col items-start justify-center overflow-hidden mask-y-from-50%">
             {/* {[...CheckList, ...CheckList].map((item, index) => {
@@ -71,7 +70,7 @@ const Verification = () => {
               {list.map((item, index) => (
                 <h2
                   key={index}
-                  className="capitalize text-white text-lg font-medium py-4"
+                  className="capitalize text-white text-lg font-medium py-4 px-4"
                   style={{ height: `${itemHeight}px` }}
                 >
                   {item}

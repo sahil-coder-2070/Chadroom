@@ -74,8 +74,8 @@ const Table = () => {
             </td>
             <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
               <div className="truncate flex items-center gap-2">
-                <div className="border w-fit rounded-sm flex">
-                  <span className="h-2.5 w-2.5 block border-r bg-yellow-400"></span>
+                <div className="border w-fit rounded-sm flex overflow-hidden">
+                  <span className="h-2.5 w-2.5 block border-r bg-yellow-400 "></span>
                   <span className="h-2.5 w-2.5 block border-r bg-yellow-400"></span>
                   <span className="h-2.5 w-2.5 block"></span>
                 </div>
@@ -109,7 +109,7 @@ const Table = () => {
             </td>
             <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
               <div className="truncate flex items-center gap-2">
-                <div className="border w-fit rounded-sm flex">
+                <div className="border w-fit rounded-sm flex overflow-hidden">
                   <span className="h-2.5 w-2.5 block border-r bg-yellow-400"></span>
                   <span className="h-2.5 w-2.5 block border-r "></span>
                   <span className="h-2.5 w-2.5 block"></span>
@@ -144,7 +144,7 @@ const Table = () => {
             </td>
             <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
               <div className="truncate flex items-center gap-2">
-                <div className="border w-fit rounded-sm flex">
+                <div className="border w-fit rounded-sm flex overflow-hidden">
                   <span className="h-2.5 w-2.5 block border-r bg-red-400"></span>
                   <span className="h-2.5 w-2.5 block border-r bg-red-400"></span>
                   <span className="h-2.5 w-2.5 block bg-red-400"></span>
@@ -246,7 +246,7 @@ export const TableTwo = () => {
             </td>
             <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
               <div className="truncate flex items-center gap-2">
-                <div className="border w-fit rounded-sm flex">
+                <div className="border w-fit rounded-sm flex overflow-hidden">
                   <span className="h-2.5 w-2.5 block border-r bg-yellow-400"></span>
                   <span className="h-2.5 w-2.5 block border-r bg-yellow-400"></span>
                   <span className="h-2.5 w-2.5 block"></span>
@@ -282,7 +282,7 @@ export const TableTwo = () => {
             </td>
             <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
               <div className="truncate flex items-center gap-2">
-                <div className="border w-fit rounded-sm flex">
+                <div className="border w-fit rounded-sm flex overflow-hidden">
                   <span className="h-2.5 w-2.5 block border-r bg-yellow-400"></span>
                   <span className="h-2.5 w-2.5 block border-r "></span>
                   <span className="h-2.5 w-2.5 block"></span>
@@ -318,7 +318,7 @@ export const TableTwo = () => {
             </td>
             <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
               <div className="truncate flex items-center gap-2">
-                <div className="border w-fit rounded-sm flex">
+                <div className="border w-fit rounded-sm flex overflow-hidden">
                   <span className="h-2.5 w-2.5 block border-r bg-red-400"></span>
                   <span className="h-2.5 w-2.5 block border-r bg-red-400"></span>
                   <span className="h-2.5 w-2.5 block bg-red-400"></span>
