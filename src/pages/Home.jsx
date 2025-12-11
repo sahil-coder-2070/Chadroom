@@ -1,10 +1,14 @@
-import React from 'react'
-import Hero from '../layout/Hero'
+import React from "react";
+import Hero from "../layout/Hero";
+import ProjectShow from "../layout/ProjectShow";
 
 const Home = () => {
   return (
-    <div><Hero/></div>
-  )
-}
+    <div>
+      <Hero />
+      <ProjectShow />
+    </div>
+  );
+};
 
-export default Home
+export default Home;
