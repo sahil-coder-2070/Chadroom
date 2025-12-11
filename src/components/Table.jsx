@@ -299,9 +299,7 @@ export const TableTwo = () => {
               </div>
             </td>
             <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
-              <div className="truncate">
-                32
-              </div>
+              <div className="truncate">32</div>
             </td>
             <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
               <div className="truncate flex gap-3">
@@ -337,9 +335,7 @@ export const TableTwo = () => {
               </div>
             </td>
             <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
-              <div className="truncate">
-                16
-              </div>
+              <div className="truncate">16</div>
             </td>
             <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
               <div className="truncate flex gap-3">
