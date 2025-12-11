@@ -1,5 +1,6 @@
 import { Inbox, ListCheck, SquareChartGantt, Ticket } from "lucide-react";
 
+
 export const PROJECTS = [
     {
         icon: SquareChartGantt,
@@ -48,3 +49,7 @@ export const PORFILES = [
         alt: "profile4"
     }
 ]
+
+
+
+  

@@ -1,4 +1,5 @@
 import { motion } from "motion/react";
+import PersonSvg from "./PersonSvg";
 
 const Verification = () => {
   const Motion = motion;
@@ -20,8 +21,8 @@ const Verification = () => {
     "confirm subscription renewal",
     "notify delivery delay",
   ];
-  const itemHeight = 50; // approximate height of each <h2>
-  const list = [...CheckList, ...CheckList]; // duplicate for seamless loop
+  const itemHeight = 60;
+  const list = [...CheckList, ...CheckList];
   const totalHeight = CheckList.length * itemHeight;
   return (
     <div className="h-[900px] p-3">
@@ -35,8 +36,13 @@ const Verification = () => {
           </p>
         </div>
         <div className=" w-full h-full flex overflow-hidden">
-          <div className=" w-3/4 "></div>
-          <div className=" w-full h-full p-2 flex flex-col items-start justify-center overflow-hidden">
+          <div className=" w-3/4 flex items-center justify-end  pr-4 pb-5 ">
+          <span className="border border-white rounded-full overflow-hidden border-2">
+
+            <PersonSvg />
+          </span>
+          </div>
+          <div className=" w-full h-full p-2 flex flex-col items-start justify-center overflow-hidden mask-y-from-50%">
             {/* {[...CheckList, ...CheckList].map((item, index) => {
               return (
                 <Motion.h2
@@ -58,7 +64,7 @@ const Verification = () => {
               transition={{
                 repeat: Infinity,
                 repeatType: "loop",
-                duration: CheckList.length * -0.2,
+                duration: CheckList.length,
                 ease: "linear",
               }}
             >
