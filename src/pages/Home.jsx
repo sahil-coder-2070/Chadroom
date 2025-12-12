@@ -15,6 +15,7 @@ const Home = () => {
       <Verification />
       <TextGrid />
       <AnimatedProject />
+      <TextGrid />
     </div>
   );
 };

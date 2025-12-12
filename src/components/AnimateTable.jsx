@@ -5,28 +5,8 @@ import {
   TriangleAlert,
   UserRound,
 } from "lucide-react";
-// import { useEffect, useState } from "react";
 
 const AnimateTableOne = ({ visible }) => {
-  //   const [tabledata, setTabledata] = useState(false);
-
-  //   useEffect(() => {
-  //     const interval = setInterval(() => {
-  //       console.log("hello world");
-
-  //       setTabledata(true);
-
-  //       const timeout = setTimeout(() => {
-  //         setTabledata(false);
-  //         console.log("false");
-  //       }, 10000);
-
-  //       return () => clearTimeout(timeout);
-  //     }, 18000);
-
-  //     return () => clearInterval(interval);
-  //   }, []);
-
   return (
     <>
       <table className="  overflow-hidden">
@@ -86,7 +66,7 @@ const AnimateTableOne = ({ visible }) => {
         </thead>
         <tbody>
           {visible && (
-            <tr className="border bg-neutral-200/70 border-blue-600">
+            <tr className="border bg-neutral-200/60 animate-pulse border-blue-600">
               <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 md:border-r md:border-border border-neutral-200 text-sm">
                 <div className="truncate">Brand Identity</div>
               </td>

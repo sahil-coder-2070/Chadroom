@@ -19,7 +19,7 @@ import Table, { TableTwo } from "../components/Table";
 
 const ProjectShow = () => {
   return (
-    <div className="flex justify-center items-center w-full md:max-w-6xl m-auto min-h-screen p-3 md:p-0 overflow-hidden">
+    <div className="flex justify-center items-center w-full md:max-w-6xl m-auto min-h-fit p-3 md:p-0 overflow-hidden">
       <div className="border border-gray-200 min-h-150 w-full bg-white rounded-xl overflow-hidden shadow-[0_20px_10px_-20px_rgba(0,0,0,0.3)] flex md:flex-row flex-col ">
         <div className=" md:w-1/4 border-r border-neutral-200 ">
           <div className="hidden md:flex justify-between items-center py-4 px-5 border-b border-neutral-200">

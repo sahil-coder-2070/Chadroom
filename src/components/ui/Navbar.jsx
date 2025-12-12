@@ -18,12 +18,12 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex items-center gap-3">
-        {/* <button className="py-1.5 px-3 bg-neutral-100/80 border border-neutral-200 text-sm rounded-sm">
+        <button className="py-1.5 px-3 bg-neutral-100/80 border border-neutral-200 text-sm rounded-sm">
           Login
         </button>
         <button className="py-1.5 px-3 bg-blue-700 border-none rounded-md text-sm text-white">
           Get access now
-        </button> */}
+        </button>
       </div>
     </navbar>
   );

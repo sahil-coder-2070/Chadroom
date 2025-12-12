@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center flex-col gap-12 mt-6">
+      <div className="min-h-fit flex items-center justify-center flex-col gap-12 my-20">
         <h1 className="text-center uppercase text-4xl md:text-[120px] font-extrabold md:leading-28 ">
           Run on <br /> autopilot
         </h1>

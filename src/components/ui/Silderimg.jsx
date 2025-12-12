@@ -19,7 +19,7 @@ const SliderImg = () => {
   }, [x]);
 
   return (
-    <div className="flex items-center justify-center my-10 mb-20 flex-col gap-5">
+    <div className="flex items-center justify-center my-20 flex-col gap-5">
       <p className="text-neutral-500 text-sm">
         Loved by thousands of small businesses
       </p>
