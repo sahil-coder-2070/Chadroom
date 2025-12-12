@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import PersonSvg from "./PersonSvg";
+import { CheckCircle } from "lucide-react";
 
 const Verification = () => {
   const Motion = motion;
@@ -68,13 +69,18 @@ const Verification = () => {
               }}
             >
               {list.map((item, index) => (
-                <h2
-                  key={index}
-                  className="capitalize text-white text-lg font-medium py-4 px-4"
-                  style={{ height: `${itemHeight}px` }}
-                >
-                  {item}
-                </h2>
+                <>
+                  <div className="flex items-center">
+                    <CheckCircle size={18} color="white" />
+                    <h2
+                      key={index}
+                      className="capitalize text-white text-lg font-medium py-4 px-4"
+                      style={{ height: `${itemHeight}px` }}
+                    >
+                      {item}
+                    </h2>
+                  </div>
+                </>
               ))}
             </motion.div>
           </div>

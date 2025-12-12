@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { motion, useMotionValue } from "motion/react";
 import { animate } from "motion";
-import clientLogos from "../assets/client-logos.webp";
+import clientLogos from "../../assets/client-logos.webp";
 
 const SliderImg = () => {
   const Motion = motion;

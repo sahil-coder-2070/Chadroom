@@ -5,8 +5,28 @@ import {
   TriangleAlert,
   UserRound,
 } from "lucide-react";
+// import { useEffect, useState } from "react";
 
-const Table = () => {
+const AnimateTableOne = ({ visible }) => {
+  //   const [tabledata, setTabledata] = useState(false);
+
+  //   useEffect(() => {
+  //     const interval = setInterval(() => {
+  //       console.log("hello world");
+
+  //       setTabledata(true);
+
+  //       const timeout = setTimeout(() => {
+  //         setTabledata(false);
+  //         console.log("false");
+  //       }, 10000);
+
+  //       return () => clearTimeout(timeout);
+  //     }, 18000);
+
+  //     return () => clearInterval(interval);
+  //   }, []);
+
   return (
     <>
       <table className="  overflow-hidden">
@@ -42,7 +62,7 @@ const Table = () => {
               </span>
             </div>
           </th>
-          <th className="p-2 md:p-3 shrink-0 overflow-hidden w-[170px] ">
+          <th className="p-2 md:p-3 shrink-0 overflow-hidden w-[180px] ">
             <div className="flex items-center gap-1.5 md:gap-2 overflow-hidden">
               <span className="truncate font-medium uppercase tracking-wide  flex items-center gap-3">
                 <p className="font-serif font-bold ">
@@ -55,7 +75,7 @@ const Table = () => {
               </span>
             </div>
           </th>
-          <th className="p-2 md:p-3 shrink-0 overflow-hidden md:sticky md:left-0 md:z-10 md:bg-paper-soft w-[200px] md:border-r md:border-border border-neutral-200 md:shadow-[2px_0_5px_-2px_rgba(0,0,0,0.1)] sticky left-0">
+          <th className="p-2 md:p-3 shrink-0 overflow-hidden md:sticky md:left-0 md:z-10 md:bg-paper-soft w-[252px] md:border-r md:border-border border-neutral-200 md:shadow-[2px_0_5px_-2px_rgba(0,0,0,0.1)] sticky left-0">
             <div className="flex items-center gap-1.5 md:gap-2 overflow-hidden">
               <span className="truncate font-medium uppercase tracking-wide  flex items-center gap-3">
                 <p className="font-serif font-bold ">T</p>{" "}
@@ -65,6 +85,43 @@ const Table = () => {
           </th>
         </thead>
         <tbody>
+          {visible && (
+            <tr className="border bg-neutral-200/70 border-blue-600">
+              <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 md:border-r md:border-border border-neutral-200 text-sm">
+                <div className="truncate">Brand Identity</div>
+              </td>
+              <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
+                <div className="truncate">EcoLife</div>
+              </td>
+              <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
+                <div className="truncate flex items-center gap-2">
+                  <div className="border w-fit rounded-sm flex overflow-hidden">
+                    <span className="h-2.5 w-2.5 block border-r bg-yellow-400 "></span>
+                    <span className="h-2.5 w-2.5 block border-r bg-yellow-400"></span>
+                    <span className="h-2.5 w-2.5 block"></span>
+                  </div>
+                  <p className="font-medium"> Medium</p>
+                </div>
+              </td>
+              <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
+                <div className="truncate">
+                  <p className="text-xs py-1 px-3 bg-neutral-100 w-fit rounded-md font-medium">
+                    Branding
+                  </p>
+                </div>
+              </td>
+              <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 text-sm">
+                <div className="truncate flex gap-3">
+                  <p className="text-xs py-1 px-2 bg-neutral-100 w-fit rounded-sm border border-neutral-200 ">
+                    Assgin
+                  </p>
+                  <p className="text-xs py-1 px-2 bg-neutral-100 w-fit rounded-sm border border-neutral-200 text-neutral-400 ">
+                    •••
+                  </p>
+                </div>
+              </td>
+            </tr>
+          )}
           <tr className="border-b border-neutral-200">
             <td className="px-2 md:px-3 py-1 md:py-1.5 bg-paper md:sticky md:left-0 md:z-10 md:border-r md:border-border border-neutral-200 text-sm">
               <div className="truncate">Brand Identity</div>
@@ -176,9 +233,9 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default AnimateTableOne;
 
-export const TableTwo = () => {
+export const AnimateTableTwo = () => {
   return (
     <>
       <table className="  overflow-hidden">
@@ -217,7 +274,7 @@ export const TableTwo = () => {
               </span>
             </div>
           </th>
-          <th className="p-2 md:p-3 shrink-0 overflow-hidden w-[170px] ">
+          <th className="p-2 md:p-3 shrink-0 overflow-hidden w-[180px] ">
             <div className="flex items-center gap-1.5 md:gap-2 overflow-hidden">
               <span className="truncate font-medium uppercase tracking-wide  flex items-center gap-3">
                 <p className="font-serif font-bold ">
@@ -230,7 +287,7 @@ export const TableTwo = () => {
               </span>
             </div>
           </th>
-          <th className="p-2 md:p-3 shrink-0 overflow-hidden md:sticky md:left-0 md:z-10 md:bg-paper-soft w-[200px] md:border-r md:border-border border-neutral-200 md:shadow-[2px_0_5px_-2px_rgba(0,0,0,0.1)] sticky left-0 ">
+          <th className="p-2 md:p-3 shrink-0 overflow-hidden md:sticky md:left-0 md:z-10 md:bg-paper-soft w-[252px]  md:border-border border-neutral-200 md:shadow-[2px_0_5px_-2px_rgba(0,0,0,0.1)] sticky left-0 ">
             <div className="flex items-center gap-1.5 md:gap-2 overflow-hidden ">
               <span className="truncate font-medium uppercase tracking-wide  flex items-center gap-3">
                 <p className="font-serif font-bold ">T</p>{" "}

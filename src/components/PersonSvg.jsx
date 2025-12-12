@@ -16,3 +16,55 @@ const PersonSvg = () => {
 };
 
 export default PersonSvg;
+
+export const ArrowSvg = () => (
+  <svg
+    className="text-primary"
+    height={64}
+    viewBox="0 0 64 64"
+    width={64}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M18.977 14h3.424m-3.424 4h8.121m-8.121 4h12.948m-12.948 4H36M18.997 42H40m-21.003 4h7.112m5.896 0h9.778m-7.778 4h9.778m-6.778 4H41M18.977 30h20.108m-20.108 4h24.896m-24.896 4H48.66M3 32h10m-5-5v2m-3 1h6m-6 4h6m-3 1v2m29-23h18m-12-4h6m-9 2h12m-12 4h12M46 5v2m-2 1h4m-4 12h4m-2 1v2m-3-5h6m1 31h8m-4-5v2m-2 1h4m-4 4h4m-2 1v2"
+      fill="none"
+      stroke="#2563eb"
+      strokeWidth={2}
+    />
+  </svg>
+);
+
+export const MailSvg = () => (
+  <svg
+    className="text-primary"
+    fill="none"
+    height={64}
+    viewBox="0 0 64 64"
+    width={64}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M11 17h42M8 39h48M8 35h20M8 31h14M8 27h10M8 23h5m38 0h5m-10 4h10m-14 4h14m-20 4h20M8 43h48M9 47h46M8 21h48M8 45h48M8 41h48M8 37h48M8 33h48M8 29h48M8 25h48M11 49h42"
+      strokeWidth={2}
+      stroke="#2563eb"
+    />
+  </svg>
+);
+
+export const MoonSvg = (props) => (
+  <svg
+    className="text-primary"
+    fill="none"
+    height={64}
+    viewBox="0 0 64 64"
+    width={64}
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <path
+      d="M37 8h2M9 40h5m10 12h13m3-40h4M16 48h28m-3-32h7M12 44h36m-7-24h10M24 40h27M40 24h12M32 36h20m-13-8h14m-17 4h17"
+      stroke="#2563eb"
+      strokeWidth={2}
+    />
+  </svg>
+);
