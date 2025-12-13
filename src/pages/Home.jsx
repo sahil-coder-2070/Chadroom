@@ -5,7 +5,15 @@ import Silderimg from "../components/ui/Silderimg";
 import Verification from "../components/Verification";
 import TextGrid from "../components/ui/TextGrid";
 import AnimatedProject from "../components/AnimatedProject";
-import { ArrowSvg, EmojiSvg, MailSvg, MoonSvg, RocketSvg, TextSvg } from "../components/PersonSvg";
+import {
+  ArrowSvg,
+  EmojiSvg,
+  MailSvg,
+  MoonSvg,
+  RocketSvg,
+  TextSvg,
+} from "../components/PersonSvg";
+import Feature from "../components/Feature";
 
 const HeadingContent = "All your time consuming emails, handled by Headroom";
 
@@ -51,6 +59,7 @@ const Home = () => {
       <TextGrid items={BoxContent} heading={HeadingContent} />
       <AnimatedProject />
       <TextGrid items={BoxContentTwo} heading={HeadingContentTwo} />
+      <Feature />
     </div>
   );
 };

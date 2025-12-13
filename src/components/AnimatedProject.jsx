@@ -51,13 +51,13 @@ const AnimatedProject = () => {
   }, []);
   const Motion = motion;
   return (
-    <div className="flex justify-center items-center w-full md:max-w-5xl m-auto h-fit p-3 md:p-0 overflow-hidden relative mb-10">
-      <div className="border border-gray-200 min-h-150 w-full bg-white rounded-xl overflow-hidden shadow-[0_20px_10px_-20px_rgba(0,0,0,0.3)] flex md:flex-row flex-col ">
-        <div className=" w-full ">
-          <div className="py-4 px-5 flex justify-between gap-2 border-b border-neutral-200">
+    <div className="relative m-auto mb-10 flex h-fit w-full items-center justify-center overflow-hidden p-3 md:max-w-5xl md:p-0">
+      <div className="flex min-h-150 w-full flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-[0_20px_10px_-20px_rgba(0,0,0,0.3)] md:flex-row">
+        <div className="w-full">
+          <div className="flex justify-between gap-2 border-b border-neutral-200 px-5 py-4">
             <h2 className="text-xl font-semibold">Projects</h2>
-            <div className="flex  items-center gap-2   ">
-              <span className="flex  items-center gap-2 py-1 px-3 bg-neutral-100 rounded-md">
+            <div className="flex items-center gap-2">
+              <span className="flex items-center gap-2 rounded-md bg-neutral-100 px-3 py-1">
                 <CirclePlus size={16} />
                 <button className="text-sm font-medium">Create Project</button>
               </span>
@@ -66,37 +66,36 @@ const AnimatedProject = () => {
                   index < 3 ? (
                     <img
                       key={index}
-                      className={`h-6 w-6 rounded-full object-cover border border-neutral-200 
-        ${index !== 0 ? `-ml-2` : ""}`}
+                      className={`h-6 w-6 rounded-full border border-neutral-200 object-cover ${index !== 0 ? `-ml-2` : ""}`}
                       src={item.img}
                       alt={item.alt}
                     />
                   ) : (
-                    <span className="h-6 w-6 rounded-full object-cover border border-neutral-200 flex items-center text-xs justify-center text-neutral-500 -ml-2 bg-neutral-50">
+                    <span className="-ml-2 flex h-6 w-6 items-center justify-center rounded-full border border-neutral-200 bg-neutral-50 object-cover text-xs text-neutral-500">
                       +{index}
                     </span>
-                  )
+                  ),
                 )}
               </span>
             </div>
           </div>
-          <div className="hidden py-4 px-5 md:flex justify-between">
+          <div className="hidden justify-between px-5 py-4 md:flex">
             <div className="flex items-center gap-3">
-              <div className="flex border border-neutral-200 rounded-md">
-                <span className="flex items-center justify-center border-r border-neutral-200 py-1.5 px-3 gap-1 rounded-l-sm rounded-bl-sm">
+              <div className="flex rounded-md border border-neutral-200">
+                <span className="flex items-center justify-center gap-1 rounded-l-sm rounded-bl-sm border-r border-neutral-200 px-3 py-1.5">
                   <CalendarFold size={12} />
                   <h2 className="text-xs">Date</h2>
                 </span>
 
-                <span className="flex items-center justify-center border-r border-neutral-200 py-1.5 px-2 gap-1">
+                <span className="flex items-center justify-center gap-1 border-r border-neutral-200 px-2 py-1.5">
                   <h2 className="text-xs text-neutral-500">is</h2>
                 </span>
 
-                <span className="flex items-center justify-center border-r border-neutral-200 py-1.5 px-2 gap-1">
+                <span className="flex items-center justify-center gap-1 border-r border-neutral-200 px-2 py-1.5">
                   <h2 className="text-xs text-neutral-600">Today</h2>
                 </span>
 
-                <span className="flex items-center justify-center border-r border-neutral-200 py-1.5 px-2 gap-1">
+                <span className="flex items-center justify-center gap-1 border-r border-neutral-200 px-2 py-1.5">
                   <X size={12} color="#171717" />
                 </span>
               </div>
@@ -105,41 +104,41 @@ const AnimatedProject = () => {
             </div>
 
             <div className="flex items-center gap-3">
-              <span className="flex gap-1 items-center">
-                <div className="w-6 h-6 border-3 border-neutral-200 border-r-yellow-500 rounded-full"></div>
+              <span className="flex items-center gap-1">
+                <div className="h-6 w-6 rounded-full border-3 border-neutral-200 border-r-yellow-500"></div>
                 <h2 className="pl-1 font-semibold text-neutral-500">3</h2>
-                <p className="capitalize text-neutral-500 text-sm">pending</p>
+                <p className="text-sm text-neutral-500 capitalize">pending</p>
               </span>
 
-              <span className="flex gap-1 items-center">
-                <div className="w-6 h-6 border-3 border-neutral-200 border-r-blue-500 rounded-full"></div>
+              <span className="flex items-center gap-1">
+                <div className="h-6 w-6 rounded-full border-3 border-neutral-200 border-r-blue-500"></div>
                 <h2 className="pl-1 font-semibold text-neutral-500">3</h2>
-                <p className="capitalize text-neutral-500 text-sm">
+                <p className="text-sm text-neutral-500 capitalize">
                   in progress
                 </p>
               </span>
             </div>
           </div>
-          <div className="py-4 px-5 flex gap-1 items-center">
-            <span className="h-2.5 w-2.5 rounded-full block bg-yellow-500"></span>
+          <div className="flex items-center gap-1 px-5 py-4">
+            <span className="block h-2.5 w-2.5 rounded-full bg-yellow-500"></span>
             <p className="text-xs font-medium capitalize">3 pending</p>
           </div>
 
-          <div className="overflow-hidden ">
-            <div className="px-6 overflow-x-auto w-full  ">
-              <div className="rounded-md border border-neutral-200 w-full ">
+          <div className="overflow-hidden">
+            <div className="w-full overflow-x-auto px-6">
+              <div className="w-full rounded-md border border-neutral-200">
                 <AnimateTableOne visible={showTable} />
               </div>
             </div>
           </div>
 
-          <div className="py-4 px-5 flex gap-1 items-center mt-3">
-            <span className="h-2.5 w-2.5 rounded-full block bg-blue-500"></span>
+          <div className="mt-3 flex items-center gap-1 px-5 py-4">
+            <span className="block h-2.5 w-2.5 rounded-full bg-blue-500"></span>
             <p className="text-xs font-medium capitalize">3 In progress</p>
           </div>
 
-          <div className="px-6 overflow-x-auto ">
-            <div className="rounded-md border border-neutral-200 min-w-max">
+          <div className="overflow-x-auto px-6">
+            <div className="min-w-max rounded-md border border-neutral-200">
               <AnimateTableTwo />
             </div>
           </div>
@@ -152,12 +151,12 @@ const AnimatedProject = () => {
             animate={{ opacity: showOverlay ? 1 : 0 }}
             transition={{ duration: 0.3 }}
             exit={{ opacity: 0, scale: 0.95 }}
-            className="h-full w-full absolute z-10 bg-white/60 backdrop-blur-[1px] flex items-center justify-center"
+            className="absolute z-10 flex h-full w-full items-center justify-center bg-white/60 backdrop-blur-[1px]"
           >
-            <span className="flex  items-center bg-white w-fit h-13 px-2 shadow-sm border border-neutral-200/80 rounded-md overflow-hidden relative">
-              <div className="flex items-center gap-3 ">
-                <img src={cube} alt="cube" className="w-8 " />
-                <span className="h-fit w-fit pb-1 absolute right-1 pl-1 overflow-hidden">
+            <span className="relative flex h-13 w-fit items-center overflow-hidden rounded-md border border-neutral-200/80 bg-white px-2 shadow-sm">
+              <div className="flex items-center gap-3">
+                <img src={cube} alt="cube" className="w-8" />
+                <span className="absolute right-1 h-fit w-fit overflow-hidden pb-1 pl-1">
                   |
                 </span>
                 <Motion.p
@@ -169,7 +168,7 @@ const AnimatedProject = () => {
                     repeatType: "loop",
                     delay: 0.5,
                   }}
-                  className="capitalize text-neutral-500 text-nowrap"
+                  className="text-nowrap text-neutral-500 capitalize"
                 >
                   Chadroom is scanning for new email
                 </Motion.p>
@@ -185,13 +184,10 @@ const AnimatedProject = () => {
             animate={{ opacity: showMail ? 1 : 0, y: showMail ? 0 : 50 }}
             transition={{ duration: 0.6 }}
             exit={{ opacity: 0, y: 50 }}
-            className="absolute w-full h-full  z-10 max-w-xl flex items-end justify-center  "
+            className="absolute z-10 flex h-full w-full max-w-xl items-end justify-center"
           >
-            <div
-              className="border border-neutral-200 bg-white w-fit flex flex-col px-5
-        py-2 justify-center rounded-lg shadow-xl "
-            >
-              <div className="flex gap-5 items-center py-3 px-3 border-b border-neutral-200">
+            <div className="flex w-fit flex-col justify-center rounded-lg border border-neutral-200 bg-white px-5 py-2 shadow-xl">
+              <div className="flex items-center gap-5 border-b border-neutral-200 px-3 py-3">
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4vtphMtxRWfK6nO2CIbGfSETyEs79Dr6oPw&s"
                   alt="d"
@@ -199,7 +195,7 @@ const AnimatedProject = () => {
                 />
                 <h2 className="text-sm font-medium">New Email Detacted</h2>
               </div>
-              <div className="px-2 py-3 flex flex-col gap-2">
+              <div className="flex flex-col gap-2 px-2 py-3">
                 <p>Hello Team,</p>
                 <ul>
                   <li>
