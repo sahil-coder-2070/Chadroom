@@ -51,7 +51,7 @@ export const MailSvg = () => (
   </svg>
 );
 
-export const MoonSvg = (props) => (
+export const MoonSvg = () => (
   <svg
     className="text-primary"
     fill="none"
@@ -59,10 +59,59 @@ export const MoonSvg = (props) => (
     viewBox="0 0 64 64"
     width={64}
     xmlns="http://www.w3.org/2000/svg"
-    {...props}
   >
     <path
       d="M37 8h2M9 40h5m10 12h13m3-40h4M16 48h28m-3-32h7M12 44h36m-7-24h10M24 40h27M40 24h12M32 36h20m-13-8h14m-17 4h17"
+      stroke="#2563eb"
+      strokeWidth={2}
+    />
+  </svg>
+);
+
+export const TextSvg = () => (
+  <svg
+    className="text-primary"
+    fill="none"
+    height={64}
+    viewBox="0 0 64 64"
+    width={64}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M42 25h18m-12-4h6m-9 2h12m-12 4h12m-7-10h2m-3 2h4m-4 12h4m-3 2h2m-4-4h6m-42 7h10m-6-4h2m-4 2h6m-6 4h6m-4 2h2m25 13h8m-5-4h2m-3 2h4m-4 4h4m-3 2h2M6 16h8m-5-4h2m-3 2h4m-4 4h4m-3 2h2m13-6h7m-7 36h7m2-36h7m-7 36h7m-8-35v34"
+      stroke="#2563eb"
+      strokeWidth={2}
+    />
+  </svg>
+);
+export const RocketSvg = () => (
+  <svg
+    className="text-primary"
+    fill="none"
+    height={64}
+    viewBox="0 0 64 64"
+    width={64}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M44 11h12m-21 4h21m-19 2h9m-11 4h9m-19 4h2m13-12h5M33 33h3m-7 4h4m-8 4h13m-15 2h2m-4 2h2m-7 0h2m1 6h2m-7 5h2m3-14h2M9 47h2m16 6h4M5 55h2m21-10h10m-11 4h9M14 29h10m-13 4h10M8 37h10m13-18h24m-28 4h26m-37 4h34m-38 4h35M9 35h35M7 39h9m4 0h19m-9 4h8m-11 4h11m-11 4h7"
+      stroke="#2563eb"
+      strokeWidth={2}
+    />
+  </svg>
+);
+export const EmojiSvg = () => (
+  <svg
+    className="text-primary"
+    height={64}
+    viewBox="0 0 64 64"
+    width={64}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <title>{"hdrm-holgram-icon-cool"}</title>
+    <path
+      d="M26 10h13M26 54h13M12 32h16m-13 4h10m14 0h10m-13-4h16M18 14h28M18 50h28M14 18h36M14 46h36M11 22h42M11 42h42M7 26h50M10 38h44M8 30h48m-46-2h44M9 34h46"
+      fill="none"
       stroke="#2563eb"
       strokeWidth={2}
     />
