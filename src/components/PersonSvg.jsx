@@ -117,3 +117,48 @@ export const EmojiSvg = () => (
     />
   </svg>
 );
+
+export const MobileSvg = () => (
+  <svg
+    className="-mb-3 transition-all duration-300 group-hover:mt-0 group-hover:scale-105"
+    fill="none"
+    height={35}
+    viewBox="0 0 55 61"
+    width={55}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M54 61V7a6 6 0 0 0-6-6H7a6 6 0 0 0-6 6v54"
+      opacity={0.3}
+      stroke="black"
+    />
+    <g
+      className="transition-all duration-300 group-hover:translate-y-3 group-hover:scale-105 group-hover:-rotate-6"
+      clipPath="url(#a)"
+    >
+      <path
+        clipRule="evenodd"
+        d="m22.082 35.191-.25-.433-.099-.17a3.37 3.37 0 0 1-.102-3.178.965.965 0 0 1 1.7-.055l1.6 2.77-5.25-9.094a1.5 1.5 0 0 1 2.597-1.5l4.25 7.361-2.25-3.897a1.5 1.5 0 0 1 2.598-1.5l2.25 3.897-1.75-3.03a1.5 1.5 0 1 1 2.598-1.5l1.75 3.03-1.25-2.165a1.5 1.5 0 1 1 2.598-1.5l2.5 4.33a6.5 6.5 0 0 1-2.379 8.88l-.866.5a7.5 7.5 0 0 1-10.245-2.746Z"
+        fill="#181818"
+        fillOpacity={0.1}
+        fillRule="evenodd"
+        stroke="black"
+        strokeLinejoin="round"
+      />
+    </g>
+    <rect
+      height={4}
+      opacity={0.3}
+      rx={2}
+      stroke="black"
+      width={17}
+      x={19.5}
+      y={5.5}
+    />
+    <defs>
+      <clipPath id="a">
+        <path fill="black" d="m11 26 20.785-12 12 20.785-20.785 12z" />
+      </clipPath>
+    </defs>
+  </svg>
+);

@@ -14,6 +14,7 @@ import {
   TextSvg,
 } from "../components/PersonSvg";
 import Feature from "../components/Feature";
+import BentoGrid from "../components/BentoGrid";
 
 const HeadingContent = "All your time consuming emails, handled by Headroom";
 
@@ -60,6 +61,7 @@ const Home = () => {
       <AnimatedProject />
       <TextGrid items={BoxContentTwo} heading={HeadingContentTwo} />
       <Feature />
+      <BentoGrid />
     </div>
   );
 };
