@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { PORFILES } from "../../constants/data";
 import { MobileSvg } from "../PersonSvg";
-import { motion, useInView } from "motion/react";
+import { motion as MOTION, useInView } from "motion/react";
 const CardStagger = () => {
   return (
     <div className="h-full w-full overflow-hidden mask-b-from-80% px-3 pt-3">
@@ -99,7 +99,7 @@ const Cards = () => {
       <span ref={ref}>
         {stagget.map((item) => {
           return (
-            <motion.div
+            <MOTION.div
               layout
               initial={{ opacity: 0, y: -10, scale: 0.8 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -109,7 +109,7 @@ const Cards = () => {
             >
               <h1 className="text-lg font-semibold">{item.title}</h1>
               <span>{item.icon} </span>
-            </motion.div>
+            </MOTION.div>
           );
         })}
       </span>

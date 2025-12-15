@@ -1,6 +1,8 @@
 import React from "react";
 import Thinking from "./skeleton/Thinking";
 import CardStagger from "./skeleton/CardStagger";
+import OrbitMotionCard from "./skeleton/OrbitMotionCard";
+import MarqueeCard from "./skeleton/MarqueeCard";
 
 const BentoGrid = () => {
   const gridItems = [
@@ -9,11 +11,8 @@ const BentoGrid = () => {
       skeleton: <Thinking />,
     },
     { className: "", skeleton: <CardStagger /> },
-    { className: "", skeleton: <></> },
-    { className: "", skeleton: <></> },
-    { className: "", skeleton: <></> },
-    { className: "", skeleton: <></> },
-    { className: "md:col-span-2", skeleton: <></> },
+    { className: "", skeleton: <OrbitMotionCard /> },
+    { className: "md:col-span-2", skeleton: <MarqueeCard/> },
   ];
 
   return (
@@ -22,7 +21,7 @@ const BentoGrid = () => {
         {gridItems.map((item, index) => (
           <div
             key={index}
-            className={`ring-1 h-75 w-full rounded-lg border border-transparent bg-white ring-black/10 ${item.className}`}
+            className={`h-75 w-full rounded-lg border border-transparent bg-white ring-1 ring-black/10 ${item.className}`}
           >
             {item.skeleton}
           </div>
