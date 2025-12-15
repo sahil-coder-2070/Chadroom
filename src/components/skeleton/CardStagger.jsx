@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { PORFILES } from "../../constants/data";
-import { MobileSvg } from "../PersonSvg";
+import { MobileSvg, ProductiveIcon, StarSvg } from "../PersonSvg";
 import { motion as MOTION, useInView } from "motion/react";
 const CardStagger = () => {
   return (
@@ -47,12 +47,12 @@ const CardData = [
   {
     id: 3,
     title: "Productive",
-    icon: <></>,
+    icon: <ProductiveIcon />,
   },
   {
     id: 4,
     title: "Innovative",
-    icon: <></>,
+    icon: <StarSvg />,
   },
   {
     id: 2,

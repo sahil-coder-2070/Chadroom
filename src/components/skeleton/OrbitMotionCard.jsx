@@ -35,6 +35,13 @@ const OrbitMotionCard = () => {
             className="size-6"
           />
         </div>
+        <div className="animate-orbit absolute flex size-10 items-center justify-center rounded-md border border-transparent bg-white ring-1 ring-black/20 [--orbit-duration:16s] [--translate-position:200px]">
+          <img
+            src="https://registry.npmmirror.com/@lobehub/icons-static-png/latest/files/dark/microsoft-color.png"
+            alt="metalogo"
+            className="size-6"
+          />
+        </div>
       </Circle>
     </div>
   );

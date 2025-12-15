@@ -160,7 +160,7 @@ const Feature = () => {
             animate={{ opacity: showOverlay ? 1 : 0 }}
             transition={{ duration: 0.3 }}
             exit={{ opacity: 0, scale: 0.95 }}
-            className="absolute z-10 flex h-full w-full items-center justify-center bg-white/60 backdrop-blur-[1px]"
+            className="absolute inset-0 z-10 flex h-[90%] w-full items-center justify-center bg-white/60 backdrop-blur-[1px]"
           >
             <span className="relative flex h-13 w-fit items-center overflow-hidden rounded-md border border-neutral-200/80 bg-white px-2 shadow-sm">
               <div className="flex items-center gap-3">

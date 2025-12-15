@@ -1,3 +1,4 @@
+import { SquareKanban } from "lucide-react";
 import React from "react";
 
 const PersonSvg = () => {
@@ -162,3 +163,88 @@ export const MobileSvg = () => (
     </defs>
   </svg>
 );
+
+export const StarSvg = () => (
+  <svg
+    className="relative -right-2 transition-all duration-300 group-hover:mt-0 group-hover:scale-105"
+    fill="none"
+    height={35}
+    viewBox="0 0 70 70"
+    width={70}
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      clipRule="evenodd"
+      d="m28.242 40.537-2.203-.63a1.033 1.033 0 0 1 0-1.986l2.202-.63a2.38 2.38 0 0 0 1.637-1.637l.63-2.203a1.033 1.033 0 0 1 1.987 0l.63 2.203a2.38 2.38 0 0 0 1.636 1.637l2.203.63a1.033 1.033 0 0 1 0 1.986l-2.203.63a2.38 2.38 0 0 0-1.637 1.637l-.63 2.203a1.033 1.033 0 0 1-1.986 0l-.63-2.203a2.38 2.38 0 0 0-1.457-1.578zm9.522-8.153-1.316-.376a.617.617 0 0 1 0-1.188l1.316-.376c.473-.135.843-.505.978-.978l.377-1.316a.617.617 0 0 1 1.187 0l.376 1.316c.135.473.505.843.978.978l1.317.376a.617.617 0 0 1 0 1.188l-1.317.376a1.42 1.42 0 0 0-.978.978l-.376 1.316a.617.617 0 0 1-1.187 0l-.377-1.316a1.42 1.42 0 0 0-.87-.943z"
+      fill="#181818"
+      fillOpacity={0.2}
+      fillRule="evenodd"
+      stroke="#181818"
+      strokeLinejoin="round"
+    />
+    <circle cx={35} cy={35} opacity={0.4} r={24.5} stroke="#000" />
+    <circle cx={35} cy={35} opacity={0.08} r={29.5} stroke="#000" />
+    <circle cx={35} cy={35} opacity={0.06} r={34.5} stroke="#000" />
+  </svg>
+);
+
+export const ProductiveIcon = () => {
+  return (
+    <svg
+      className="relative -right-2 transition-all duration-300 group-hover:mt-0 group-hover:scale-105"
+      fill="none"
+      height={35}
+      viewBox="0 0 70 70"
+      width={70}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      {/* Checklist Icon */}
+      <rect
+        x={22}
+        y={20}
+        width={26}
+        height={30}
+        rx={3}
+        stroke="#181818"
+        strokeOpacity={0.8}
+        strokeWidth={1.5}
+      />
+
+      {/* Checkmarks */}
+      <path
+        d="M26 28l2 2 4-4"
+        stroke="#181818"
+        strokeWidth={1.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M26 35l2 2 4-4"
+        stroke="#181818"
+        strokeWidth={1.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        opacity={0.7}
+      />
+      <path
+        d="M26 42l2 2 4-4"
+        stroke="#181818"
+        strokeWidth={1.5}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        opacity={0.4}
+      />
+
+      {/* Task lines */}
+      <line x1={36} y1={29} x2={44} y2={29} stroke="#181818" opacity={0.6} />
+      <line x1={36} y1={36} x2={44} y2={36} stroke="#181818" opacity={0.4} />
+      <line x1={36} y1={43} x2={44} y2={43} stroke="#181818" opacity={0.25} />
+
+      {/* Outer rings (same style as original) */}
+      <circle cx={35} cy={35} r={24.5} stroke="#000" opacity={0.4} />
+      <circle cx={35} cy={35} r={29.5} stroke="#000" opacity={0.08} />
+      <circle cx={35} cy={35} r={34.5} stroke="#000" opacity={0.06} />
+    </svg>
+  );
+};
+
