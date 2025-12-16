@@ -1,4 +1,3 @@
-import Marquee from "react-fast-marquee";
 import { motion as Motion, useAnimation } from "motion/react";
 import { useEffect } from "react";
 
